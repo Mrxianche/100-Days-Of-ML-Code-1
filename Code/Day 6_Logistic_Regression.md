@@ -41,7 +41,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.25, rand
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
+X_test = sc.fit_transform(X_test)
 ```
 
 ### 步骤2 | 逻辑回归模型
@@ -78,26 +78,3 @@ cm = confusion_matrix(y_test, y_pred)
 
 ![](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/LR_training.png?raw=true)
 ![](https://github.com/MachineLearning100/100-Days-Of-ML-Code/blob/master/Other%20Docs/LR_test.png?raw=true) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
